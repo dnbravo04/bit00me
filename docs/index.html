@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Bravo</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Diego Bravo Arias.</title>
 </head>
 
 <body>
     <!--Acerca de mi-->
-    <h1>Sobre Mi</h1>
+    <h1>Diego Bravo - Sobre Mi</h1>
     <figure>
-        <img src="./ProfileImage.jpg" alt="Imagen personal" style="width: 300px"
-            title="Esta es literalmente la foto más elegante que tengo">
+        <img src="./ProfileImage.jpg" alt="Imagen personal" title="Esta es literalmente la foto más elegante que tengo">
         <figcaption>Una imagen personal + un poco de photoshop</figcaption>
     </figure>
     <p>
@@ -37,8 +37,8 @@
         <li>Profundizar en otros frameworks de JS</li>
     </ol>
     <!--Mis aficiones - Tabla-->
-    <h2>Mis hobbies</h2>
-    <table style="border: 3px solid black;">
+    <h2 class="full-bar">Mis hobbies</h2>
+    <table>
         <thead>
             <tr>
                 <th>Mi hobbies</th>
@@ -65,11 +65,27 @@
         </tbody>
     </table>
     <!--Pieza favorita - iframe-->
-    <h2>Una de mis piezas favoritas</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/QxHkLdQy5f0" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
+    <h2 class="full-bar">Una de mis piezas favoritas</h2>
+    <div id="video">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/QxHkLdQy5f0" title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+    <h2 class="full-bar">Contactame</h2>
+    <fieldset>
+        <legend>Formulario de Contacto</legend>
+        <form action="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre...">
+            <label for="email">Correo Electronico:</label>
+            <input type="email" name="email" id="email" placeholder="Tu email...">
+            <label for="phone">Numero de Contacto: </label>
+            <input type="tel" name="phone" id="phone" placeholder="Tu numero de contacto...">
+            <label for="mensaje">Mensaje: </label>
+            <textarea id="mensaje" placeholder="Deja un mensaje..."></textarea>
+            <input type="button" value="Enviar">
+        </form>
+    </fieldset>
 </body>
 
 </html>
